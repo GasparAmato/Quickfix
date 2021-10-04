@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>QUICKLEAN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="" id="user" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ayuda</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contactate con nosotros</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#who" class="w3-bar-item w3-button w3-padding-large">Ayuda</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">¿Como funciona?</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26251.969631176304!2d-58.657274349999994!3d-34.667424049999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1633347648489!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+  <p class="w3-bar servicio-text">SELECCIONE SU SERVICIO:</p>
+
+  <ul class="jobs">
+    <li><button><img src="images/11.png" alt=""></button></li>
+    <li><button><img src="images/6.png" alt=""></button></li>
+    <li><button><img src="images/7.png" alt=""></button></li>
+  </ul>
+
+  <ul class="jobs">
+  <li><button><img src="images/8.png" alt=""></button></li>
+    <li><button><img src="images/4.png" alt=""></button></li>
+  </ul>
+
+
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-quigreen">  
+  <div class="w3-xlarge w3-padding-32" id="contact">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ 
+</footer>
+
+
+
+<script>
+
+var username = localStorage.getItem("UN");
+document.getElementById("user").innerHTML = username;
+ 
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    
+
+
+
+
+    
+    </script>
+    
+    </body>
+    </html>
+    
